@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteCar - Cadastro de Carro</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+    <link rel="stylesheet" href="/css/cadastro.css">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <nav>
+            <a href="/index.html"> INÍCIO </a>
+            <a href="/pages/cliente/lista-clientes.html"> CLIENTES </a>
+            <a href="/pages/carro/lista-carros.html"> CARROS </a>
+            <a href="/pages/pedido/lista-pedidos.html"> PEDIDOS </a>
+        </nav>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="ctn-titulo">
+            <h2>CADASTRO CARRO</h2>
+        </div>
+
+        <div class="ctn-formulario">
+            <form action="" method="post">
+                <label for="marca-carro">
+                    Marca *
+                    <input type="text" name="marca-carro" id="marca-carro" placeholder="Digite a marca do carro" minlength="2" required>
+                </label>
+
+                <label for="modelo-carro">
+                    Modelo *
+                    <input type="text" name="modelo-carro" id="modelo-carro" placeholder="Digite o modelo do carro" minlength="2" required>
+                </label>
+
+                <label for="ano-fabricacao">
+                    Ano de Fabricação *
+                    <input type="number" name="ano-fabricacao" id="ano-fabricacao" placeholder="Digite o ano de fabricação" min="1900" max="2099" required>
+                </label>
+
+                <label for="cor-carro">
+                    Cor *
+                    <input type="text" name="cor-carro" id="cor-carro" placeholder="Digite a cor do carro" required>
+                </label>
+
+                <p>*Campo obrigatório</p>
+                <input type="submit" value="CADASTRAR">
+            </form>
+        </div>
+    </main>
+
+</body>
+
+</html>
